@@ -1,31 +1,33 @@
 #Create a class name, Car
 class Car:
-#Create data a6ributes for class, Car
-# __init__ method that accept the car’s
-#year model and make as arguments.
-def __init__(self, year_model, make):
-self.__year_model = year_model
-self.__make = make
-self.__speed = 0
+  #Create data a6ributes for class, Car
+  # __init__ method that accept the car’s
+  #year model and make as arguments.
+  def __init__(self, year_model, make):
+    self.__year_model = year_model
+    self.__make = make
+    self.__speed = 0
 #accelerate method should add 5 to the speed data
 #a6ribute each Gme it is called.
 def accelerate(self):
-self.__speed += 5
+  self.__speed += 5
 #brake method should subtract 5 from the
 #speed data a6ribute each Gme it is called.
 def brake(self):
-if self.__speed >= 5:
-self.__speed -= 5
+  if self.__speed >= 5:
+    self.__speed -= 5
 # get_speed method should return the current speed.
 def get_speed(self):
-return self.__speed
+  return self.__speed
 # Create a Car object
 car = Car("2023", "Hyndai")
+
 # Accelerate the car five Gmes
 for _ in range(5):
-car.accelerate()
-print("Current speed aRer acceleraGon:", car.get_speed())
+  car.accelerate()
+  print("Current speed aRer acceleraGon:", car.get_speed())
 # Brake the car five Gmes
 for _ in range(5):
-car.brake()
-print("Current speed aRer braking:", car.get_speed())
+  car.brake()
+  print("Current speed aRer braking:", car.get_speed())
+
